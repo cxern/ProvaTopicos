@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Relatório de Receitas</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Relatório</h1>
+        <nav>
+            <a href="index.html">Listar</a>
+            <a href="cadastro.html">Cadastrar</a>
+            <a href="relatorio.html">Relatório</a>
+        </nav>
+    </header>
+    <main class="container">
+        <h2>Resumo</h2>
+        <ul>
+            <li>Total em receitas: <span id="total-receitas"></span></li>
+            <li>Receitas com alérgenos: <span id="qtd-alergenos"></span></li>
+            <li>Receitas mais caras:</li>
+        </ul>
+        <ol id="mais-caras"></ol>
+            <h2>Multiplicador de Receita</h2>
+            <label for="receitaSelect">Caso você precisar multiplicar a quantidade de uma receita, utilize esta área para saber o valor a ser gasto:</label>
+            <select id="receitaSelect">
+                <option value="">Selecione uma receita</option>
+                
+            </select>
+            <input id="quantidadeReceitas" type="text" placeholder="Insira a quantidade de receitas">
+            <button id="btnCalcular" type="submit">Calcular</button>
+            <div id="resultadoCalculo">
+
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Receitas API</p>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

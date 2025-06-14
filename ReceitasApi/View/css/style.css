@@ -1,0 +1,196 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f9f9f9;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+header,
+footer {
+    background: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+main {
+    flex: 1 0 auto;
+    padding: 2em;
+    padding-bottom: 2em; 
+}
+
+main.container {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    max-width: 600px;
+    margin: 2em auto;
+    padding: 2em 2em 5em 2em;
+}
+
+main.container h2 {
+    color: #2d3a4b;
+    margin-bottom: 1em;
+    font-size: 1.5em;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.3em;
+}
+
+main.container ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1.5em;
+}
+
+main.container ul li {
+    padding: 0.5em 0;
+    font-size: 1.1em;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+main.container ul li:last-child {
+    border-bottom: none;
+}
+
+main.container ul li span,
+main.container ol li {
+    color: #59719b;
+    font-weight: 500;
+    text-shadow: 0 3px 3px rgba(0,0,0,0.05);
+}
+
+main.container ol {
+    padding-left: 1.2em;
+    margin: 0;
+}
+
+main.container ol li {
+    margin-bottom: 0.5em;
+    font-size: 1.05em;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+main {
+    padding: 2em;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1em;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+
+form {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 2em 1.5em;
+    max-width: 500px;
+    margin: 2em auto;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+form label {
+    display: block;
+    margin: 1em 0 0.5em;
+    font-weight: 500;
+    color: #222;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+textarea,
+select {
+    width: 100%;
+    padding: 0.6em 0.8em;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    font-size: 1em;
+    background: #fafbfc;
+    margin-bottom: 0.5em;
+    box-sizing: border-box;
+    transition: border 0.2s;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #546177;
+    outline: none;
+}
+
+button,
+input[type="submit"] {
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.7em 1.5em;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 1em;
+    transition: background 0.2s;
+}
+
+button:hover,
+input[type="submit"]:hover {
+    background: #546177;
+}
+
+.form-group {
+    margin-bottom: 1.2em;
+}
+
+@media (max-width: 600px) {
+    form {
+        padding: 1em 0.5em;
+    }
+}
+
+#mensagem {
+    margin-top: 1em;
+    color: green;
+}
+
+.alergia {
+    color: red;
+    font-weight: bold;
+}
+
+.receita {
+    border: 1px solid #ccc;
+    padding: 16px;
+    margin-bottom: 24px;
+}

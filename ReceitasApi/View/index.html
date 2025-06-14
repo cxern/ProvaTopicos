@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Receitas - Listagem</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Receitas</h1>
+        <nav>
+            <a href="index.html">Listar</a>
+            <a href="cadastro.html">Cadastrar</a>
+            <a href="relatorio.html">Relatório</a>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <label for="alergiaSelect">Filtrar por alergia:</label>
+            <select id="alergiaSelect">
+                <option value="">Nenhuma</option>
+                
+            </select>
+            <button id="btnFiltrarAlergia" type="button">Filtrar</button>
+        </div>
+        <div id="receitas">
+
+        </div>
+        <h2>Lista de Receitas</h2>
+        <table id="tabela-receitas">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Descrição</th>
+                    <th>Ingredientes</th>
+                    <th class="alergia">Alérgenos</th>
+                    <th>Modo de Preparo</th>
+                    <th>Valor</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </main>
+    <footer>
+        <p>&copy; 2025 Receitas API</p>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

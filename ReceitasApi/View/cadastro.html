@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastrar/Editar Receita</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Cadastrar/Editar Receita</h1>
+        <nav>
+            <a href="index.html">Listar</a>
+            <a href="cadastro.html">Cadastrar</a>
+            <a href="relatorio.html">Relatório</a>
+        </nav>
+    </header>
+    <main>
+        <form id="form-receita">
+            <label>Nome: <input type="text" name="nome" required></label>
+            <label>Descrição: <input type="text" name="descricao" required></label>
+            <label>Valor: <input type="number" step="0.01" name="valor" required></label>
+            <label>Ingredientes (separados por vírgula): <input type="text" name="ingredientes" required></label>
+            <label>Alérgenos (separados por vírgula): <input type="text" name="alergenos"></label>
+            <label>Modo de Preparo: <input type="text" name="modopreparo" required></label>
+            <button type="submit">Salvar</button>
+        </form>
+        <div id="mensagem"></div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Receitas API</p>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
